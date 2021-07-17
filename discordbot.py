@@ -1,9 +1,10 @@
 # Imports
 import discord
 from discord.ext import commands
+import os
 
 # Credentials
-TOKEN = 'INSERT TOKEN HERE'
+TOKEN = os.environ['DISCORDTOKEN']
 
 # Create bot
 client = commands.Bot(command_prefix='!')
