@@ -16,7 +16,7 @@ async def on_ready():
     print('Bot ID: {}'.format(client.user.id))
 
 # Command
-@client.command()
+@client.command(brief='Creates an alternating upper/lower case version of your message', description='cReAtEs An AlTeRnAtInG uPpEr/LoWeR cAsE vErSiOn Of YoUr MeSsAgE')
 async def altcaps(ctx):
     content = ctx.message.content.split(None, 1)[1]
     res = ""
